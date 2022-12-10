@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUpForm</title>
+    <style>
+      * {
+        font-size: 20px;
+      }
+
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(66,72,83);
+      }
+      .box {
+        width: 30%;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        border-radius: 10px;
+        background-color: rgb(255,255,255);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      #button{
+        height: 50px;
+        border: none;
+        color: white;
+        margin: 28px 0px;
+        width: 100%;
+        background-color: rgb(233, 157, 36);
+      }
+
+      input[type="submit"]:hover{
+        cursor: pointer;
+    
+      }
+
+      
+
+      .heading>img {
+        
+        display: block;
+        margin: auto;
+        
+        margin-top: 30px;
+        width: 60%;
+      }
+      .heading>div>h1{
+        text-align: center;
+      }
+
+      form {
+        padding: 30px 50px 10px 40px;
+        width: auto;
+      }
+
+      input {
+        margin: 8px 0px 25px 0px;
+        height: 30px;
+        padding: 4px 10px;
+        width: 90%;
+        border: none;
+        border: 1px solid gray;
+        background-color: rgb(255,255,255);
+      }
+
+      .pass {
+        margin-top: 20px;
+      }
+      .pass > a {
+        text-decoration: none;
+        color: gray;
+      }
+
+      .bottom {
+        margin-top: 20px;
+      }
+
+      .bottom > a {
+        text-decoration: none;
+        color: gray;
+      }
+      .heading {
+        font-size: 30px;
+      }
+
+       @media screen and (max-width: 1000px){
+        .box{
+          width: 100%;
+        }
+        form{
+          width: 77%;
+        }
+      } 
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="heading">
+
+        <img src="http://creativefuel.io/assets/img/image20.png" alt="">
+         <div><h1>Register to Creativefuel</h1></div>
+    </div>
+      <form action="">
+        <input type="text" id="name" placeholder="Enter Name"><br>
+        <input type="text" id="address" placeholder="Enter Address"><br>
+        <input type="number" id="num" placeholder="Enter Number"><br>
+        <input type="email" id="email" placeholder="Create Email" required /><br />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Create Password"
+          minlength="6"
+          required
+        />
+        <br />
+
+        <input type="submit" value="Register" id="button" />
+       
+      </form>
+      <p>Already have an Account?<a href="login.html">Go to Login</a></p>
+     
+      
+      
+    </div>
+  </body>
+  <script src="./signup.js"></script>
+</html>
+
